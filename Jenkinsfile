@@ -35,11 +35,9 @@ pipeline {
         success {
             echo 'Build and security scan passed.'
         }
-
         failure {
             echo 'Pipeline failed: check build, tests, or security findings.'
         }
-
         always {
             echo 'CI/CD pipeline execution finished.'
         }
