@@ -22,7 +22,7 @@ pipeline {
             steps {
                 snykSecurity(
                     snykInstallation: 'Snyk-CLI',
-                    snykTokenId: 'snyk-api-token',
+                    snykTokenId: 'snyk-api',
                     failOnIssues: true,
                     severity: 'high',
                     additionalArguments: '--file=pom.xml'
